@@ -61,7 +61,7 @@ export class AppComponent {
   }
 
   guessWord(){
-    this.hubConnection?.invoke("GuessLetter", this.letter.at(0));
+    this.hubConnection?.invoke("GuessLetter", this.letter.at(0)?.toUpperCase);
     this.letter = "";
   }
 

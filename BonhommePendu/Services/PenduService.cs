@@ -37,7 +37,7 @@ namespace BonhommePendu.Services
                 return null;
             }
 
-            return new GuessEvent(_gameData, letter);
+            return new GuessEvent(_gameData, letter, null);
         }
 
         private async Task<string> GetRandomWord()
